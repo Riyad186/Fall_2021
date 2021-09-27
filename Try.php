@@ -1,42 +1,57 @@
-<?php include "Test.php";
-    
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTml</title>
-</head>
-<body>
-    <form action=" " method="POST">
-      First Name:   <input type="text" name="username"><br>
-      <?php
-      echo $message;
-      ?>
-      Last  Name:   <input type="text" name="name">
-      <?php 
-      echo $message1;
-       ?>
-    
-      
-      Age:          <input type="number" name="age"><br>
-      Designation: 
-      <input type="radio" name="programmer" value="Junior">Junior Programmer
-<input type="radio" name="programmer" value="Senior">Senior Programmer
-<input type="radio" name="programmer" value="Project">Project Lead
-<br>
-<?php
-echo  $programmer;
-?>
-erred Language  <input type="checkbox" name="language">JAVA
-<input type="checkbox" name="language">PHP
-<input type="checkbox" name="language">c++
-<br>
- Please choose a file <input type="file"  > 
-  <input type="submit">
-<input type="reset">
+<?php include "Test.php"; ?>
 
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Registration form </h1>
+<form action="" method="post">
+First name: <input type="text" name="fname"> <?php echo $fname; ?>
+<br>
+Last name: <input type="text" name="lname"> <?php echo $lname; ?>
+<br>
+Age: <input type="number" name="lname"> <?php echo $lname; ?>
+<br>
+<p>Designation
+  <input type="radio" id="opt1" name="designation" value="Junior Programmer">
+  <label for="opt1">Junior Programmer</label>
+  <input type="radio" id="opt2" name="designation" value="Senior Programmer">
+  <label for="opt2">Senior Programmer</label>
+  <input type="radio" id="opt3" name="designation" value="Project Lead">
+  <label for="opt3">Project Lead</label>
+</p>
+  <?php echo $radio; ?>
+<br>
+
+Preferred language
+<input type="checkbox" id="lan1" name="lan1" value="JAVA">
+Preferred language is JAVA <br>
+<input type="checkbox" id="lan2" name="lan2" value="PHP">
+Preferred language is PHP <br>
+<input type="checkbox" id="lan3" name="lan3" value="C++">
+Preferred language is C++ <br>
+<br>
+<?php echo $checkbox; ?>
+
+<?php echo $v1;?>
+
+<?php echo $v2;?>
+
+<?php echo $v3;?>
+<br>
+
+E-mail: <input type="text" name="email"> <?php echo $email; ?>
+<br>
+Password: <input type="password" name="password"> <?php echo $pass; ?>
+<br>
+Please choose a file  <input type="submit" value="Choose File"> 
+No file choosen
+<br>
+
+
+
+
+<input type="submit" value="SUBMIT">
+<input type="submit" value="RESET">
+</form>
 </body>
 </html>
