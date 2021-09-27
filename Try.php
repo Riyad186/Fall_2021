@@ -19,6 +19,7 @@
       <?php 
       echo $message1;
        ?>
+    
       
       Age:          <input type="number" name="age"><br>
       Designation: 
