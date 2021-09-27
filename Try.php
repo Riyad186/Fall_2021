@@ -35,7 +35,7 @@ erred Language  <input type="checkbox" name="language">JAVA
 <input type="checkbox" name="language">c++
 <br>
  Please choose a file <input type="file"  > 
-  
+  <input type="submit">
 <input type="reset">
 
 </body>
