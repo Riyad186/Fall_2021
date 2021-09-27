@@ -43,15 +43,15 @@ E-mail: <input type="text" name="email"> <?php echo $email; ?>
 <br>
 Password: <input type="password" name="password"> <?php echo $pass; ?>
 <br>
-Please choose a file  <input type="submit" value="Choose File"> 
-No file choosen
+Please choose a file  <input type="file" value="Choose File"> 
+
 <br>
 
 
 
 
 <input type="submit" value="SUBMIT">
-<input type="submit" value="RESET">
+<input type="reset" value="RESET">
 </form>
 </body>
 </html>
