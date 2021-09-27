@@ -27,12 +27,15 @@
 <input type="radio" name="programmer" value="Senior">Senior Programmer
 <input type="radio" name="programmer" value="Project">Project Lead
 <br>
- Preferred Language  <input type="checkbox" name="language">JAVA
+<?php
+echo  $programmer;
+?>
+erred Language  <input type="checkbox" name="language">JAVA
 <input type="checkbox" name="language">PHP
 <input type="checkbox" name="language">c++
 <br>
- <input type ="Submit"> 
- 
+ Please choose a file <input type="file"  > 
+  
 <input type="reset">
 
 </body>
