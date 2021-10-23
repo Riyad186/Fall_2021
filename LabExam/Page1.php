@@ -1,10 +1,9 @@
 
 <?php include 'Form_validation.php';
+//include 'Db.php';
 session_start(); 
-if(empty($_SESSION["submit"])) 
-{
+
 header("Location:Page2.php"); // Redirecting To Home Page
-}
 
 /* $username="";
 $password="";

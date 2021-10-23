@@ -1,9 +1,10 @@
 <?php  include 'Form2.php';
+ //include 'Db.php';
   
-  session_start();
+  /* session_start();
   
   if(session_destroy()) // Destroying All Sessions
- //header("Location:Page2.php");
+ //header("Location:Page2.php"); */
   
 ?>
 <!DOCTYPE html>

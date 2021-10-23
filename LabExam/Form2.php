@@ -1,5 +1,5 @@
 <?php 
-
+ include 'Db.php';
  $university="";
  $degree="";
  $major="";

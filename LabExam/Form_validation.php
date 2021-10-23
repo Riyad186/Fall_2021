@@ -1,4 +1,5 @@
 <?php 
+ include 'Db.php';
 
  $username="";
  $password="";
@@ -41,6 +42,7 @@
               {
                   echo  $mobile="type here<br>";
               }
+              
               
  }
 
