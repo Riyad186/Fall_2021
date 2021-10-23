@@ -7,5 +7,32 @@
         "email": "riyadislam16@gmail.com",
         "password": "1234",
         "file": null
+    },
+    {
+        "fname": "Riyad",
+        "lname": "12",
+        "designation": "Junior Programmer",
+        "lan1": "C++",
+        "email": "riyadislam16@gmail.com",
+        "password": "145678",
+        "file": ""
+    },
+    {
+        "fname": "Riyad",
+        "lname": "22",
+        "designation": "Junior Programmer",
+        "lan1": "PHP",
+        "email": "riyadislam16@gmail.com",
+        "password": "123345",
+        "file": ""
+    },
+    {
+        "fname": "xyz",
+        "lname": "",
+        "designation": "Senior Programmer",
+        "lan1": "C++",
+        "email": "bcd@gmail.com",
+        "password": "1234",
+        "file": ""
     }
 ]
