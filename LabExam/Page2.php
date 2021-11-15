@@ -1,10 +1,15 @@
-<?php  include 'Form2.php';
- //include 'Db.php';
+<?php
+ 
+//include ('Form2.php');
+include 'Db.php';
+
+session_start(); 
+
+header("Location:Page1.php"); // Redirecting To Home Page
+ 
   
-  /* session_start();
   
-  if(session_destroy()) // Destroying All Sessions
- //header("Location:Page2.php"); */
+
   
 ?>
 <!DOCTYPE html>
@@ -17,7 +22,7 @@
 </head>
 
  <h1>Education</h1>
- <form action=""method="post">
+ <form action="Db.php" method="post">
       University: <input type="text" name="university"> <br> <?php echo $university; ?> <br>
        Degree: <input type="text" name="degree"> <br> <?php echo $degree;?> <br>
        Major: <input type="text" name ="major"> <br>  <?php echo $major; ?> <br>

@@ -1,46 +1,80 @@
 <?php
- $servername="localhost";
- $username="root";
- $password="";
- $dbname="CV";
- 
- $conn=new mysqli($servername,$username,$password,$dbname);
- if($conn->connect_error){
-     die("connection failed".$connect_error);
 
- }
- $test=TRUE;
- $username=$_REQUEST["user"];
+    $db_server="localhost";
+
+    $db_uname="root";
+
+    $db_pass="";
+
+    $db_name="CV";
 
 
- $password=$_REQUEST["pass"];
 
- $fullname=$_REQUEST["Full"];
-  $mobile=$_REQUEST["mobile"];
- $dob=$_REQUEST["dob"];
- $university=$_REQUEST["university"];
+   
 
- $degree=$_REQUEST["degree"];
+   
 
-  $major=$_REQUEST["major"];
+    function execute($query){   //responsible for running insert,update,delete
 
+        global $db_server,$db_uname,$db_pass,$db_name;
 
-$result=$_REQUEST["result"];
+        $conn = mysqli_connect($db_server,$db_uname,$db_pass,$db_name);
 
- $passing=$_REQUEST["passing"];
- 
- $sql="INSERT INTO employee(username,password,fullname,mobile,dob,university,degree,major,result,passing) VALUES ( '$username','$password','$fullname',' $mobile','$dob','$university','$degree','$major','$result','$passing')";
- if($conn->query($sql)==$test)
- {
-     if($_REQUEST["submit"]==TRUE){
-        echo "successfully inserted!";
+        if($conn){
+
+            if(mysqli_query($conn,$query)){
+
+                return true;
+
+            }
+
+            else{
+
+                return mysqli_error($conn);
+
+            }
+
+        }
+
     }
-                                                                                                                                             
- }
- else{
-     echo "error:". $sql. "<br>".$conn->error;
 
- }
- $conn->close();
+
+
+
+
+   
+
+   
+
+    function get($query){ //responsible for running select queires
+
+        global $db_server,$db_uname,$db_pass,$db_name;
+
+        $conn = mysqli_connect($db_server,$db_uname,$db_pass,$db_name);
+
+        $data = array();
+
+        if($conn){
+
+            $result = mysqli_query($conn,$query);
+
+            while($row = mysqli_fetch_assoc($result)){
+
+                $data[] = $row;
+
+            }
+
+        }
+
+        return $data;
+
+    }
 
 ?>
+<!-- 
+function insertUser($id,$username,$password,$gender,$email,$address,$usertype){
+
+$query = "insert into users values ($id,'$username','$password','$gender','$email','$address','$usertype');";
+
+return execute($query);
+ -->

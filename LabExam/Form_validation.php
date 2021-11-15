@@ -1,22 +1,24 @@
 <?php 
  include 'Db.php';
-
- $username="";
- $password="";
+ 
+ 
+   
+ $usernames="";
+ $passwords="";
  $fullname="";
  $mobile="";
  $dob="";
 
  if($_SERVER["REQUEST_METHOD"]=="POST"){
             if(!empty($_REQUEST["user"])){
-                $username=$_REQUEST["user"];
+                $usernames=$_REQUEST["user"];
             }
             else
              {
                  echo "please input here";
              }
              if(!empty($_REQUEST["pass"])){
-                 $password=$_REQUEST["pass"];
+                 $passwords=$_REQUEST["pass"];
              }
              else {
                  echo "input <br>";
@@ -42,9 +44,22 @@
               {
                   echo  $mobile="type here<br>";
               }
+               
+                if(isset($_REQUEST["submit"])){
+                function insertUser($usernames,$passwords,$fullname,$mobile,$dob) {
+
+                    $query = "insert into dummy values ('$usernames','$passwords','$fullname','$mobile','$dob');";
+                    
+                    return execute($query);
+                   }
+                }
+
+                  
+            }
+               
               
               
- }
+ 
 
 
 

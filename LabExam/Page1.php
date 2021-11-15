@@ -1,9 +1,7 @@
 
 <?php include 'Form_validation.php';
+ //include ('Db.php');
 //include 'Db.php';
-session_start(); 
-
-header("Location:Page2.php"); // Redirecting To Home Page
 
 /* $username="";
 $password="";
@@ -23,14 +21,24 @@ $dob=""; */
 </head>
  <h1>Personal Details</h1>
  <form action="" method="post">
-      Username: <input type="text" name="user"> <br>  <?php echo  $username; ?> <br>
-       Password: <input type="password" name="pass"> <br> <?php  echo $password;?> <br>
+     <body>
+         
+    
+      Username: <input type="text" name="user"> <br>  <?php echo  $usernames; ?> <br>
+       Password: <input type="password" name="pass"> <br> <?php  echo $passwords;?> <br>
        Full name: <input type="text" name ="Full"> <br>   <?php echo $fullname;?> <br>
        Mobile no: <input type="number" name="mobile"><br> <?php  echo $mobile; ?> <br>
        Date of birth : <input type="date" name="dob"><br>  <?php  echo $dob; ?><br>
        <input type="submit" name= "submit"value ="Next">
  </form>
-<body>
+
+ <?php
     
+
+
+
+
+?>
 </body>
 </html>
+
