@@ -1,0 +1,26 @@
+
+h1,h3 {
+     text-align: center;
+     color:lightblue;
+}
+h4,h5,#opt1opt2,#opt3{
+    color:peru;
+}
+
+#lan1,#lan2,#lan3{
+    color: peru;
+    font-size: 20px;
+}
+#submit{
+    color:green;
+
+}
+#reset{
+    color:blue;
+}
+center{
+    background-color: blue;
+}
+form {
+    background-color: rgb(248,200,44,0.548);
+}
